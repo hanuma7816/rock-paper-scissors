@@ -52,7 +52,11 @@
 
            localStorage.setItem("score",JSON.stringify(score));
            document.querySelector('.js-result').innerHTML=result;
-           document.querySelector('.js-moves').innerHTML=`You <img class="move-img" src="images/${playerMove}-emoji.png" alt="" />  <img class="move-img" src="images/${computerGuess}-emoji.png" alt=""/> computer`;
+          
+            document.querySelector('.js-moves').innerHTML =
+            `You <img class="move-img" src="${playerMove}-emoji.png" alt="" />
+            <img class="move-img" src="${computerGuess}-emoji.png" alt="" /> computer`;
+
            updateScore();
 
        
